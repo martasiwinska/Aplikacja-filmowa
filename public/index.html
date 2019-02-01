@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <title>Aplikacja filmowa</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+
+
+
+    <div class="container" id="container-style">
+
+
+<div id="title-container">
+      <h1>SUBIEKTYWNY</h1>
+      <h2>RANKING FILMÓW</h2>
+      <button type="button" class="btn btn-primary mb-5 add-film-btn" data-toggle="modal" data-target="#exampleModal">
+        Dodaj film
+      </button>
+</div>
+      <table class="table" id="table-style">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">TYTUŁ</th>
+            <th scope="col">REŻYSER</th>
+            <th scope="col">ROK</th>
+            <th scope="col"></th>
+          </tr>
+          <!-- tr to rząd -->
+        </thead>
+        <tbody>
+          <!-- tu się wkleja -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">DODAJ FILM</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="">
+              <div class="form-group">
+                <!-- <label for="exampleInputEmail1">tytuł</label> -->
+                <input type="text" class="form-control" id="filmName" aria-describedby="emailHelp" placeholder="tytuł" onfocus="placeholder=''" onblur="placeholder='tytuł'">
+              </div>
+              <div class="form-group">
+                <!-- <label for="exampleInputPassword1">reżyser</label> -->
+                <input type="text" class="form-control" id="filmAuthor" placeholder="reżyser" onfocus="placeholder=''" onblur="placeholder='reżyser'">
+              </div>
+              <div class="form-group">
+                <!-- <label for="exampleInputPassword1">rok</label> -->
+                <input type="text" class="form-control" id="filmYear" placeholder="rok" onfocus="placeholder=''" onblur="placeholder='rok'">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary cancel-film-btn-modal" data-dismiss="modal">Cofnij</button>
+            <button type="button" id="add" class="btn btn-primary add-film-btn-modal">Dodaj</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- particles.js container -->
+
+      <div id="particles-js"></div>
+
+     <!-- stats - count particles -->
+     <div class="count-particles to-hide">
+       <span class="js-count-particles to-hide">--  </span> particles </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- wklejam firebas -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-<img>.js"></script> -->
+    <script>
+   // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBiJDRuMgQqGpM2FfyFZu7uK8Gmv1OiopA",
+        authDomain: "javascriptapp-d31b1.firebaseapp.com",
+        databaseURL: "https://javascriptapp-d31b1.firebaseio.com",
+        projectId: "javascriptapp-d31b1",
+        storageBucket: "javascriptapp-d31b1.appspot.com",
+        messagingSenderId: "160439979458"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+     <!-- stats.js lib -->
+     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

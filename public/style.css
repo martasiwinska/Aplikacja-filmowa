@@ -1,0 +1,192 @@
+#container-style {
+    margin: 80px 80px 80px 160px;
+    position: absolute;
+    z-index: 100;
+}
+
+#table-style {
+    width: 600px;
+    margin: 0 auto;
+    border: solid 2px black;
+    color: #eee;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+}
+
+/* strona główna */
+.add-film-btn {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  }
+
+  .add-film-btn:hover,
+  .add-film-btn:focus{
+    color: black;
+    background-color: rgba(238,238,238,0.6);
+    border: none;
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+
+/* modal */
+
+/* btn dodaj */
+  .add-film-btn-modal {
+  background-color: rgba(159,68,173,0.8);
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  }
+
+  .add-film-btn-modal:hover,
+  .add-film-btn-modal:focus{
+    background-color: rgba(178,5,126,0.8);
+    border: none;
+  }
+
+/* btn cofnij */
+  .cancel-film-btn-modal {
+  background-color: rgba(238,238,238,0.8);
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  }
+
+  .cancel-film-btn-modal:hover,
+  .cancel-film-btn-modal:focus{
+    background-color: rgba(10,233,252,0.8);
+    border: none;
+  }
+
+  button.close {
+    color: #fff;
+    opacity: 1;
+  }
+
+  button.close:hover {
+    color: red;
+  }
+
+
+
+.table .thead-dark th {
+  background-color: rgba(238,238,238,0.6);
+  font-size: 12px;
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+.form-control {
+  background-color: rgba(238,238,238,1);
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  background-color: rgba(178,5,126,0.6);
+  color: white;
+  outline: none;
+  border: 1px solid rgba(238,238,238,1);
+  box-shadow: none;
+}
+
+.to-hide{
+  visibility: hidden;
+}
+
+/* ---- reset ---- */
+body {
+  margin:0;
+  font-family: font-family: 'Didact Gothic', sans-serif;
+  font-size: 12px;
+  background-color:
+}
+
+div#title-container {
+  margin-left: 650px;
+}
+
+div#title-container h1 {
+  color: #eee;
+  font-family: 'Poiret One', cursive;
+  text-transform: uppercase;
+  font-size: 75px;
+}
+
+div#title-container h2 {
+  color: #eee;
+  font-family: 'Poiret One', cursive;
+  text-transform: uppercase;
+  font-size: 54px;
+}
+
+
+thead .thead-drak {
+  border-color: rgba(238,238,238,0.5);
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+  }
+
+/* ---- particles.js container ---- */
+#particles-js{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: #b61924; */
+  background-image: url("https://comettv.s3.amazonaws.com/uploads/2017/05/blade-runner-2049.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  }
+
+  /* ---- stats.js ---- */
+  .count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    }
+
+    .js-count-particles{
+      font-size: 1.1em;
+      }
+
+    #stats, .count-particles{
+      -webkit-user-select: none;
+      margin-top: 5px;
+      margin-left: 5px;
+      }
+
+    #stats{
+      border-radius: 3px 3px 0 0;
+      overflow: hidden;
+      }
+
+    .count-particles{
+      border-radius: 0 0 3px 3px;
+    }
